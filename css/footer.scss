@@ -1,0 +1,53 @@
+@import 'common.scss';
+
+footer{
+    padding:4rem 10%;
+    background: $light-bg;
+    .box-wrapper{
+        @include grid(25rem);
+        .box{
+            h3{
+                font-size:2.2rem;
+                font-weight: 600;
+                color:$black;
+                padding:1rem 0;
+            }
+            p{
+                font-size:1.5rem;
+                color:$light-color;
+                padding-bottom: 0.5rem;
+            }
+            a{
+                display: block;
+                font-size:1.4rem;
+                color:$light-color;
+                padding:1rem 0;
+                &:hover{
+                    color:$green;
+                    i{
+                        padding-right:1.5rem;
+                    }
+                }
+                i{
+                    padding-right:0.5rem;
+                    color:$green;
+                }
+            }
+            form{ // 이메일 폼
+                input[type="email"]{ // 이메일
+                    width:100%;
+                    padding:1rem 1.2rem;
+                    font-size:1.6rem;
+                    color:$black;
+                    margin:1rem 0;
+                    text-transform: none;
+                }
+            }  
+            .payment{
+                width:100%;
+                margin-top: 2rem;
+            }
+            
+        }
+    }
+}

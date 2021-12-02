@@ -1,0 +1,20 @@
+@charset "UTF-8";
+/* 폰트 Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+html { font-size: 62.5%; font-family: 'Poppins', sans-serif; scroll-behavior: smooth; }
+
+.btn { margin-top: 1rem; display: inline-block; padding: 0.8rem 3rem; background: #bac34e; color: #fff; font-size: 1.7rem; text-align: center; cursor: pointer; }
+.btn:hover { background: #222; }
+
+footer { padding: 4rem 10%; background: #f3f3f3; }
+footer .box-wrapper { display: grid; grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); gap: 1.5rem; }
+footer .box-wrapper .box h3 { font-size: 2.2rem; font-weight: 600; color: #222; padding: 1rem 0; }
+footer .box-wrapper .box p { font-size: 1.5rem; color: #666; padding-bottom: 0.5rem; }
+footer .box-wrapper .box a { display: block; font-size: 1.4rem; color: #666; padding: 1rem 0; }
+footer .box-wrapper .box a:hover { color: #bac34e; }
+footer .box-wrapper .box a:hover i { padding-right: 1.5rem; }
+footer .box-wrapper .box a i { padding-right: 0.5rem; color: #bac34e; }
+footer .box-wrapper .box form input[type="email"] { width: 100%; padding: 1rem 1.2rem; font-size: 1.6rem; color: #222; margin: 1rem 0; text-transform: none; }
+footer .box-wrapper .box .payment { width: 100%; margin-top: 2rem; }
+
+/*# sourceMappingURL=footer.css.map */

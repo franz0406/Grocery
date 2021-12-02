@@ -1,0 +1,41 @@
+/* 폰트 Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+html{
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+// 변수
+
+$green:#bac34e;
+$black:#222;
+$white:#fff;
+$light-color:#666;
+$light-bg:#f3f3f3;
+
+$border:0.1rem solid rgba(0,0,0,0.1);
+$box-shadow:0 0.5rem 1rem rgba(0,0,0,0.1);
+
+// 믹스인
+
+@mixin grid($value){
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax($value, 1fr));
+    gap:1.5rem;
+}
+
+.btn{ // 공통 버튼 스타일    
+    margin-top: 1rem;
+    display: inline-block;
+    padding:0.8rem 3rem;
+    background: $green;
+    color:$white;
+    font-size:1.7rem;
+    text-align: center;
+    cursor: pointer;
+    &:hover{
+        background: $black;
+    }
+}
