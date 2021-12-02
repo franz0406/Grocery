@@ -39,3 +39,23 @@ $box-shadow:0 0.5rem 1rem rgba(0,0,0,0.1);
         background: $black;
     }
 }
+
+@media screen and (max-width:450px){ // 모바일
+    
+    html{
+        font-size: 50%;
+    }
+    
+}
+
+@media screen and (max-width:991px){ // PC
+    
+    html{
+        font-size: 55%;
+    }
+
+    header, main{
+        padding:2rem;
+    }
+
+}
