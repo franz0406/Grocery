@@ -40,6 +40,59 @@ $box-shadow:0 0.5rem 1rem rgba(0,0,0,0.1);
     }
 }
 
+main{
+    padding:0 10%;
+}
+
+.heading{ // 서브페이지 헤더
+    padding-top: 12rem;
+    padding-bottom: 8rem;
+    background: url(../imgs/heading-bg.jpg)no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    h1{
+        color:$black;
+        font-size:4rem;
+        font-weight: 600
+    }
+    p{
+        padding-top: 1rem;
+        font-size:2rem;
+        color:$light-color;
+        a{
+            color:$black;
+            padding-right: 0.5rem;
+            &:hover{
+                color:$green;
+            }
+        }
+    }
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    font-size:2.5rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+    padding:1.2rem 0;
+    border-bottom: $border;
+    color:$black;
+    span{
+        color:$green;
+        padding-left: 1rem;
+    }
+    a{
+        margin-left: auto;
+        color:$light-color;
+        font-size:1.5rem;
+        &:hover{
+            color:$green;
+        }
+    }
+}
+
 @media screen and (max-width:450px){ // 모바일
     
     html{
