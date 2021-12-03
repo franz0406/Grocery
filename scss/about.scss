@@ -1,0 +1,72 @@
+@import "common.scss";
+
+.about{ // 어바웃 섹션
+    padding:2rem 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    .image{ // 이미지
+        flex:1 1 40rem;
+        img{
+            width:100%;
+        }
+    }
+    .content{ // 내용
+        flex:1 1 40rem;
+        span{
+            color:$green;
+            font-size:2.5rem;
+        }
+        h3{
+            color:$black;
+            font-size:3rem;
+            font-weight:600;
+            padding-top:0.5rem;
+        }
+        p{
+            color:$light-color;
+            font-size:1.4rem;
+            line-height: 2.2rem;
+            padding:1rem 0;
+        }
+    }
+}
+
+.gellery > .box-wrapper{ // 갤러리 섹션
+    @include grid(30rem);
+    .box{
+        height:25rem;
+        overflow: hidden;
+        position:relative;
+        &:hover > img{
+            transform: scale(1.2);
+        }
+        &:hover > .icons{
+            bottom: 0;
+        }
+        img{ // 이미지
+            height:100%;
+            width:100%;
+            object-fit: cover;
+        }
+        .icons{ // 아이콘 배경
+            padding:1.5rem 0;
+            position: absolute;
+            bottom:-6rem;
+            left: 0;
+            right: 0;
+            text-align: center;
+            z-index: 10;
+            background: rgba(0,0,0,0.7);            
+            a{ // 아이콘
+                font-size:2.5rem;
+                color:$white;
+                margin:0 1.5rem;
+                &:hover{
+                    color:$green;
+                }
+            }
+        }
+    }
+}

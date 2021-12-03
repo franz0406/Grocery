@@ -101,64 +101,86 @@ main {
   }
 }
 
-footer {
-  margin-top: 5rem;
-  padding: 4rem 10%;
-  background: #f3f3f3;
-}
-
-footer .box-wrapper {
+.info-container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  -ms-grid-columns: (minmax(27rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
   gap: 1.5rem;
 }
 
-footer .box-wrapper .box h3 {
-  font-size: 2.2rem;
-  font-weight: 600;
-  color: #222;
-  padding: 1rem 0;
+.info-container .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.5rem;
+  padding: 2rem 0;
 }
 
-footer .box-wrapper .box p {
+.info-container .info img {
+  height: 7rem;
+}
+
+.info-container .info .content h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #222;
+  padding-bottom: 1rem;
+}
+
+.info-container .info .content span {
   font-size: 1.5rem;
   color: #666;
-  padding-bottom: 0.5rem;
 }
 
-footer .box-wrapper .box a {
-  display: block;
-  font-size: 1.4rem;
-  color: #666;
-  padding: 1rem 0;
+.review {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
 }
 
-footer .box-wrapper .box a:hover {
-  color: #bac34e;
+.review .box {
+  padding: 2rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
 }
 
-footer .box-wrapper .box a:hover i {
-  padding-right: 1.5rem;
+.review .box .user {
+  padding-bottom: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
 }
 
-footer .box-wrapper .box a i {
-  padding-right: 0.5rem;
-  color: #bac34e;
+.review .box .user img {
+  height: 7rem;
+  width: 7rem;
+  border-radius: 50%;
 }
 
-footer .box-wrapper .box form input[type="email"] {
-  width: 100%;
-  padding: 1rem 1.2rem;
-  font-size: 1.6rem;
+.review .box .user h3 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  padding-bottom: 1rem;
   color: #222;
-  margin: 1rem 0;
-  text-transform: none;
 }
 
-footer .box-wrapper .box .payment {
-  width: 100%;
-  margin-top: 2rem;
+.review .box .user span {
+  font-size: 1.4rem;
+  color: #bac34e;
 }
-/*# sourceMappingURL=footer.css.map */
+
+.review .box p {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #666;
+}
+/*# sourceMappingURL=review.css.map */

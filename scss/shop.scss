@@ -1,6 +1,6 @@
 @import "common.scss";
 
-.category > .box-container{
+.category > .box-container{ // 카테고리
     @include grid(16rem);
     padding:4rem 0;
     .box{
@@ -17,4 +17,69 @@
             }
         }
     }
+}
+
+.products > .box-container{ // 프로덕츠
+    @include grid(25rem); 
+    .box{
+        position:relative;
+        background: $light-bg;
+        text-align: center;
+        overflow:hidden;
+        &:hover > .icons{
+            top:0;
+        }
+        .icons{ // 아이콘
+            position: absolute;
+            top: -105% ;left: 0;
+            height:30rem;
+            width:100%;
+            display: flex;
+            align-items:center;
+            justify-content:center;
+            background: rgba(243,243,243, 0.8);
+            gap:1rem;
+            a{
+                font-size:3rem;
+                height:5rem;
+                width:5rem;
+                line-height: 5rem;
+                background: $white;
+                box-shadow: $box-shadow;
+                color:$light-color;
+                &:hover{
+                    background: $green;
+                    color:$white;
+                }
+            }
+        }
+        .image{ // 제품 이미지
+            height:30rem;
+            width:100%;
+            overflow:hidden;
+            img{
+                height:100%;
+                width:100%;
+                object-fit:cover;
+            }
+        }
+        .content{ // 제품 내용
+            padding:1.5rem;
+            h3{
+                font-size:2rem;
+                font-weight:600;
+                color:$black;
+            }
+            .price{
+                font-size:2rem;
+                color:$black;
+                padding:1rem 0;
+            }
+            .stars > i{
+                font-size:1.7rem;
+                color:$green;
+            }
+        }
+    }
+
 }
